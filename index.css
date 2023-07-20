@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Computer Retro;
+    border: none;
+}
+
+@font-face {
+    font-family: Computer Retro;
+    src: url(retro_computer_personal_use.ttf)
+}
+
+body {
+    background-image: url('Retro-Wallpaper-HD-Computer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.T01 {
+    margin-bottom: 10vh;
+    border-bottom: solid;
+}
+.T01, .loading {
+    color: #DDD;
+}
+button {
+    border-radius: 1rem;
+    padding: 4px;
+    margin-top: 2vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
