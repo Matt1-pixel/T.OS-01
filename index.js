@@ -1,22 +1,35 @@
 let loading = document.querySelector("#loading");
+let time = 0;
+let audio = document.getElementById('start')
 
-let startSis = document.querySelector("#startSis");
+function changeText() {
+    loading.textContent = `Carregamento em ${time}%`;
+}
 
 function startSistem() {
-    function contarNumeros(numero) {
-        
-    if (numero > 99) {
-        return numero;
-    } else {
-        console.log(numero);
-        return contarNumeros(numero + 1);
-    }
-    }
+    audio.play()
 
-    const valorX = contarNumeros(0);
-    const valorFinal = parseInt(valorX);
+    interval = setInterval(function() {
+        if (time < 100) {
+            time++;
+            changeText();
 
-    loading.textContent = "Este é " + valorFinal;
+            if(time == 100){
+                window.location = 'main/index2.html'
+            }
+        } else {
+            clearInterval(interval); 
+            time = 0; 
+            startSistem()
+    }
+    }, 177);
 }
-let audio = document.getElementById("start");
-    audio.play();
+
+let startSis = document.querySelector("#startSis");
+let interval; 
+
+
+//startSis.addEventListener("click", function () {
+//  clearInterval(interval);
+//startSistem();
+//});
