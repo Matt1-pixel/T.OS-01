@@ -3,7 +3,7 @@ let time = 0;
 let audio = document.getElementById('start')
 
 function changeText() {
-    loading.textContent = `Carregamento em ${time}%`;
+    loading.textContent = `loading ${time}%`;
 }
 
 function startSistem() {
@@ -15,7 +15,7 @@ function startSistem() {
             changeText();
 
             if(time == 100){
-                window.location = 'main/index2.html'
+                window.location = 'main/home.html'
             }
         } else {
             clearInterval(interval); 

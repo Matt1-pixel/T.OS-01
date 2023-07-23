@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Computer Retro;
+    border: none;
+}
+
+@font-face {
+    font-family: Computer Retro;
+    src: url(../retro_computer_personal_use.ttf)
+}
+
+body {
+    background-image: url('pxfuel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 100vh;
+}
+h1 {
+    
+}
+.screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.753);
+}
