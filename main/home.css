@@ -50,6 +50,7 @@ h1 {
     color: #ddd;
     padding: 10px;
     border-radius: 7px;
+    resize: none;
 }
 
 .entrada {
@@ -77,3 +78,4 @@ h1 {
 .screen::-webkit-scrollbar-thumb:hover {
     background-color: none;
 }
+
