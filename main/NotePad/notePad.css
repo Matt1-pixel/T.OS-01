@@ -15,9 +15,13 @@ h1 {
     color: #ddd;
     margin-bottom: 1em;
 }
+h3 {
+    color: #ddd;
+    margin: 10px;
+}
 
 body {
-    background-image: url('/Retro-Wallpaper-HD-Computer.jpg');
+    background-image: url('pxfuel\ \(1\).jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
