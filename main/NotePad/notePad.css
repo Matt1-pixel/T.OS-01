@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Computer Retro;
+    border: none;
+}
+
+@font-face {
+    font-family: Computer Retro;
+    src: url(/retro_computer_personal_use.ttf)
+}
+
+h1 {
+    color: #ddd;
+    margin-bottom: 1em;
+}
+
+body {
+    background-image: url('/Retro-Wallpaper-HD-Computer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 100vh;
+}
+
+
+.screenPad {
+
+    display: flex;
+    flex-direction: row;
+    min-width: 60vw;
+    min-height: 65vh;
+    max-width: 60vw;
+    max-height: 65vh;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: #ddd;
+    padding: 10px;
+    border-radius: 7px;
+    resize: none;
+
+}
+
+.screenPad::-webkit-scrollbar {
+    width: 7px;
+
+}
+
+.screenPad::-webkit-scrollbar-track {
+    background-color: #330d49b6;
+}
+
+.screenPad::-webkit-scrollbar-thumb {
+    background-color: #88888871;
+    border-radius: 5px;
+}
+
+.screenPad::-webkit-scrollbar-thumb:hover {
+    background-color: none;
+}
+
+.salvar {
+    margin-top: 1rem;
+    padding: 3px;
+    border: 2px solid #383838;
+}
+
+.salvar:hover {
+    background-color: #b1b1b1;
+}
+
+.salvar:active {
+    background-color: #202020;
+    color: azure;
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+}
