@@ -17,9 +17,12 @@ h1 {
 }
 h3 {
     color: #ddd;
-    margin: 10px;
+    margin:20px;
 }
-
+.btn {
+    display: flex;
+    
+}
 body {
     background-image: url('pxfuel\ \(1\).jpg');
     background-size: cover;

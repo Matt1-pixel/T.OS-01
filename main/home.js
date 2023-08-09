@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             }else if(entradaElement.toLowerCase() === "notepad") {
                 window.location.href = "NotePad/notePad.html"
+                
             }else {
                 // Se a entrada não for "help"
                 screenElement.textContent = "Digite 'Help' para ver os comandos validos.";
