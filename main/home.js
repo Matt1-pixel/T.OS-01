@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const entradaValue = document.querySelector(".entrada");
 
     entradaValue.addEventListener("keydown", function (event) {
+        //Apos entrada de valor verifica qual ação fazer
         if (event.key === "Enter") {
             let entradaElement = entradaValue.value;
 
@@ -14,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 window.location.href = "NotePad/notePad.html"
                 
             }else {
-                // Se a entrada não for "help"
+                // Se a entrada não for valor valido
                 screenElement.textContent = "Digite 'Help' para ver os comandos validos.";
             }
 
-            // Limpar o campo de entrada após pressionar Enter
+            // Limpar o campo de entrada apos pressionar enter
             entradaValue.value = "";
         }
     });

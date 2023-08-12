@@ -7,11 +7,12 @@ function changeText() {
 }
 
 function startSistem() {
+
     audio.play()
 
     interval = setInterval(function() {
         if (time < 100) {
-            time++;
+            time += 1;
             changeText();
 
             if(time == 100){
@@ -19,7 +20,7 @@ function startSistem() {
             }
         } else {
             clearInterval(interval); 
-            time = 0; 
+
             startSistem()
     }
     }, 177);
@@ -27,9 +28,3 @@ function startSistem() {
 
 let startSis = document.querySelector("#startSis");
 let interval; 
-
-
-//startSis.addEventListener("click", function () {
-//  clearInterval(interval);
-//startSistem();
-//});

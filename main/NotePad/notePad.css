@@ -19,10 +19,7 @@ h3 {
     color: #ddd;
     margin:20px;
 }
-.btn {
-    display: flex;
 
-}
 body {
     background-image: url('pxfuel\ \(1\).jpg');
     background-size: cover;
@@ -77,20 +74,38 @@ body {
 .screenPad::-webkit-scrollbar-thumb:hover {
     background-color: none;
 }
+.btn {
+    display: flex;
 
-.salvar {
+}
+
+.upload {
+    display: none;
+}
+.space {
+    margin-right: 2vw;
+}
+.uploadFile {
+    display: flex;
+    background-color: #d8d8d8;
+
+}
+
+
+.salvar, .uploadFile {
     margin-top: 1rem;
     padding: 3px;
     border: 2px solid #383838;
 }
 
-.salvar:hover {
+.salvar:hover, .uploadFile:hover {
     background-color: #b1b1b1;
 }
 
-.salvar:active {
+.salvar:active, .uploadFile:active {
     background-color: #202020;
     color: azure;
     box-shadow: 0 1px #666;
     transform: translateY(2px);
 }
+

@@ -1,32 +1,38 @@
+//salva arquivo de texto a partir do textarea
+function saveFile() {
+    const editorContent = document.querySelector(".screenPad").value;
+    const blob = new Blob([editorContent], { type: "text/plain" });
+    const url = URL.createObjectURL(blob);
 
-        function saveFile() {
-            const editorContent = document.querySelector(".screenPad").value;
-            const blob = new Blob([editorContent], { type: "text/plain" });
-            const url = URL.createObjectURL(blob);
+    const downloadLink = document.createElement("a");
+    downloadLink.download = "myfile-TOS.txt";
+    downloadLink.href = url;
+    downloadLink.click();
+};
 
-            const downloadLink = document.createElement("a");
-            downloadLink.download = "myfile.txt";
-            downloadLink.href = url;
-            downloadLink.click();
-        }
+//le e carrega arquivo .txt no textarea
+const arquivoInput = document.querySelector("#upload")
+const screenTxt = document.querySelector(".screenPad")
 
-        function loadFile() {
-            const fileInput = document.createElement("input");
-            fileInput.type = "file";
+arquivoInput.addEventListener('change' , function (){
+    const arquivoTxt = this.files[0];
+    const leitor = new FileReader();
 
-            fileInput.addEventListener("change", function() {
-                const file = fileInput.files[0];
-                const reader = new FileReader();
+    leitor.addEventListener('load', function(){
+        screenTxt.value = leitor.result;
+    })
 
-                reader.onload = function(event) {
-                    const content = event.target.result;
-                    document.getElementById("editor").value = content;
-                };
+    if(arquivoTxt){
+        leitor.readAsText(arquivoTxt)
+    }
+})
 
-                reader.readAsText(file);
-            });
 
-            fileInput.click();
-        }
 
- 
+
+
+
+
+
+
+

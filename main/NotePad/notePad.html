@@ -14,10 +14,13 @@
 
         <h1>T.OS-01</h1>
         <h3>Writer:</h3>
-        <textarea class="screenPad"  autofocus></textarea>
+        <textarea class="screenPad" id="screenPad" autofocus></textarea>
     <div class="btn">
+
         <button class="salvar" onclick="saveFile()">Salvar</button>
-        <button class="salvar" onclick="loadFile()">Continuar</button>
+        <divc class="space"></divc>
+        <label for="upload" class="uploadFile">Escolher Arquivo</label>
+        <input type="file" class="upload" id="upload" >
     </div>
     </div>
     <script src="notePad.js"></script>
