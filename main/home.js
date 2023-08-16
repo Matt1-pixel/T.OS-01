@@ -4,27 +4,30 @@ document.addEventListener("DOMContentLoaded", function () {
     const entradaValue = document.querySelector(".entrada");
 
     entradaValue.addEventListener("keydown", function (event) {
-        //Apos entrada de valor verifica qual ação fazer
+        // após entrada de valor verifica qual acao fazer
         if (event.key === "Enter") {
-            let entradaElement = entradaValue.value;
+            let entradaElement = entradaValue.value.toLowerCase();
 
-            if (entradaElement.toLowerCase() === "help") {
-                screenElement.textContent = ">Para anotar digite: NotePad.\n\n>Para calcular digite: Calculator.\n\n>Para jogar digite: Play.\n\n>Para escutar musica digite: music.\n\n>Para acessar a biblioteca digite: library.\n\n>Para ver a previsão do tempo digite: >Para acessar o chatbot digite: chatbot.\n\n"
-
-
-            }else if(entradaElement.toLowerCase() === "notepad") {
-                window.location.href = "NotePad/notePad.html"
-                
-
-            } else if (entradaElement.toLowerCase() === "calculator") {
-                window.location.href = "Calculator/calc.html"
-
-            } else {
-                // Se a entrada não for valor valido
-                screenElement.textContent = "Digite 'Help' para ver os comandos validos.";
+            switch (entradaElement) {
+                case "help":
+                    screenElement.textContent = ">Para anotar digite: NotePad.\n\n>Para calcular digite: Calculator.\n\n>Para jogar digite: Play.\n\n>Para escutar musica digite: music.\n\n>Para acessar a biblioteca digite: library.\n\n>Para ver a previsão do tempo digite: weather.\n\n>Para acessar o chatbot digite: chatbot.\n\n";
+                    break;
+                case "notepad":
+                    window.location.href = "NotePad/notePad.html";
+                    break;
+                case "calculator":
+                    window.location.href = "Calculator/calc.html";
+                    break;
+                case "weather":
+                    
+                    break;
+                case "chatbot":
+                    break;
+                default:
+                    screenElement.textContent = "Digite 'Help' para ver os comandos válidos.";
+                    break;
             }
 
-            // Limpar o campo de entrada apos pressionar enter
             entradaValue.value = "";
         }
     });
