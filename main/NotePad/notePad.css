@@ -32,7 +32,6 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #ccc;
     padding: 10px;
     height: 100vh;
 }
@@ -115,8 +114,8 @@ body {
 }
 h1 {
     color: #ddd;
-    margin-bottom: 1em;
-    margin-left: 26vw;
+    margin-bottom: 5px;
+    margin-left: 25vw;
     margin-right: 10vw;
 }
 .back {
@@ -126,4 +125,16 @@ h1 {
     border: none;
     padding: 3px 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 405px ) {
+    .back{
+        margin-left: 0; 
+        margin-right: 0;
+    }
+    h1 {
+        margin-right: 5vw;
+        margin-left: 10vw;
+
+    }
 }
