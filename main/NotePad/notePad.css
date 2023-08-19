@@ -11,10 +11,7 @@
     src: url(../../retro_computer_personal_use.ttf)
 }
 
-h1 {
-    color: #ddd;
-    margin-bottom: 1em;
-}
+
 h3 {
     color: #ddd;
     margin:20px;
@@ -109,3 +106,24 @@ body {
     transform: translateY(2px);
 }
 
+.top {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+h1 {
+    color: #ddd;
+    margin-bottom: 1em;
+    margin-left: 26vw;
+    margin-right: 10vw;
+}
+.back {
+    margin-left: 10vw;
+    
+    background-color: #f1f1f1;
+    border: none;
+    padding: 3px 5px;
+    cursor: pointer;
+}

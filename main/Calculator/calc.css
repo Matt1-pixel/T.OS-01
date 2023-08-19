@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Computer Retro;
+    border: none;
+}
+
+@font-face {
+    font-family: Computer Retro;
+    src: url(../retro_computer_personal_use.ttf)
+}

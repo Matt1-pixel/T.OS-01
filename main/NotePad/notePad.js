@@ -8,31 +8,24 @@ function saveFile() {
     downloadLink.download = "myfile-TOS.txt";
     downloadLink.href = url;
     downloadLink.click();
-};
+}
+function backHome() {
+    window.location.href = "../Home.html";
+}
 
 //le e carrega arquivo .txt no textarea
-const arquivoInput = document.querySelector("#upload")
-const screenTxt = document.querySelector(".screenPad")
+const arquivoInput = document.querySelector("#upload");
+const screenTxt = document.querySelector(".screenPad");
 
-arquivoInput.addEventListener('change' , function (){
+arquivoInput.addEventListener("change", function () {
     const arquivoTxt = this.files[0];
     const leitor = new FileReader();
 
-    leitor.addEventListener('load', function(){
-        screenTxt.value = leitor.result;
-    })
+    leitor.addEventListener("load", function () {
+    screenTxt.value = leitor.result;
+    });
 
-    if(arquivoTxt){
-        leitor.readAsText(arquivoTxt)
+    if (arquivoTxt) {
+    leitor.readAsText(arquivoTxt);
     }
-})
-
-
-
-
-
-
-
-
-
-
+});

@@ -9,7 +9,7 @@ function changeText() {
 function startSistem() {
 
     audio.play()
-
+    
     interval = setInterval(function() {
         if (time < 100) {
             time += 1;
