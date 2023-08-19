@@ -10,7 +10,7 @@ function saveFile() {
     downloadLink.click();
 }
 function backHome() {
-    window.location.href = "../Home.html";
+    window.location.href = "../../main/home.html";
 }
 
 //le e carrega arquivo .txt no textarea
