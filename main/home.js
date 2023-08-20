@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 case "notepad":
                     window.location.href = "NotePad/notePad.html";
                     break;
-                case "calculator":
-                    window.location.href = "Calculator/calc.html";
+                case "music":
+                    window.location.href = "music player/music.html";
                     break;
                 case "weather":
                     
