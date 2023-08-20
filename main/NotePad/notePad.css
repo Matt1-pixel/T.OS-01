@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: Computer Retro;
-    src: url(../../retro_computer_personal_use.ttf)
+    src: url(/media/retro_computer_personal_use.ttf)
 }
 
 
@@ -18,7 +18,7 @@ h3 {
 }
 
 body {
-    background-image: url('pxfuel\ \(1\).jpg');
+    background-image: url('../../media/computerGalaxy.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -9,6 +9,7 @@ function saveFile() {
     downloadLink.href = url;
     downloadLink.click();
 }
+//botao e voltar 
 function backHome() {
     window.location.href = "../main/home.html";
 }
