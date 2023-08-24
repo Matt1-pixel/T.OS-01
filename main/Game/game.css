@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Computer Retro;
+    border: none;
+}
+
+@font-face {
+    font-family: Computer Retro;
+    src: url(/media/retro_computer_personal_use.ttf)
+}
+
+
+h3 {
+    color: #ddd;
+    margin:20px;
+}
+
+body {
+    background-image: url('../../media/computerGalaxy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    height: 100vh;
+}
+
+
+.screenPad {
+
+    display: flex;
+    flex-direction: row;
+    min-width: 60vw;
+    min-height: 65vh;
+    max-width: 60vw;
+    max-height: 65vh;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: #ddd;
+    padding: 10px;
+    border-radius: 7px;
+    resize: none;
+
+}
+
+.screenPad::-webkit-scrollbar {
+    width: 7px;
+
+}
+
+.screenPad::-webkit-scrollbar-track {
+    background-color: #330d49b6;
+}
+
+.screenPad::-webkit-scrollbar-thumb {
+    background-color: #88888871;
+    border-radius: 5px;
+}
+
+.screenPad::-webkit-scrollbar-thumb:hover {
+    background-color: none;
+}
+.btn {
+    display: flex;
+
+}
+
+.upload {
+    display: none;
+}
+.space {
+    margin-right: 2vw;
+}
+.uploadFile {
+    display: flex;
+    background-color: #d8d8d8;
+
+}
+
+
+.salvar, .uploadFile {
+    margin-top: 1rem;
+    padding: 3px;
+    border: 2px solid #383838;
+}
+
+.salvar:hover, .uploadFile:hover, .back:hover {
+    background-color: #b1b1b1;
+}
+
+.salvar:active, .uploadFile:active, .back:active {
+    background-color: #202020;
+    color: azure;
+    box-shadow: 0 1px #666;
+    transform: translateY(2px);
+}
+
+.top {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+h1 {
+    color: #ddd;
+    margin-bottom: 5px;
+    margin-left: 25vw;
+    margin-right: 10vw;
+}
+.back {
+    margin-left: 10vw;
+    
+    background-color: #f1f1f1;
+    border: none;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 405px ) {
+    .back{
+        margin-left: 0; 
+        margin-right: 0;
+    }
+    h1 {
+        margin-right: 5vw;
+        margin-left: 10vw;
+
+    }
+}
