@@ -12,15 +12,15 @@ function startSistem() {
     
     interval = setInterval(function() {
         if (time < 100) {
-            time += 1;
+            time ++;
             changeText();
 
             if(time == 100){
-                window.location = 'main/home.html'
+                window.location = 'main/home.html';
             }
         } else {
             clearInterval(interval); 
-
+            time = 0
             startSistem()
     }
     }, 177);
