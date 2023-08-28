@@ -11,7 +11,7 @@ function saveFile() {
 }
 //botao e voltar 
 function backHome() {
-    window.location.href = "../main/home.html";
+    window.location.href = "../home.html";
 }
 
 //le e carrega arquivo .txt no textarea

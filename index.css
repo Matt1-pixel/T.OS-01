@@ -8,11 +8,11 @@
 
 @font-face {
     font-family: Computer Retro;
-    src: url(media/retro_computer_personal_use.ttf)
+    src: url(retro_computer_personal_use.ttf)
 }
 
 body {
-    background-image: url('media/Retro-Wallpaper-HD-Computer.jpg');
+    background-image: url('Retro-Wallpaper-HD-Computer.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
